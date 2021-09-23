@@ -51,3 +51,8 @@ pip install -r requirements-dev.txt
 ```
 django-admin startproject comanymanager .
 ```
+- criar o app company
+```
+cd companymanager
+django-admin startapp company
+```
