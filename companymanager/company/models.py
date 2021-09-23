@@ -13,15 +13,7 @@ class Company(models.Model):
 
 class Product(models.Model):
     name = models.CharField(max_length=150)
+    company = models.ForeignKey(Company, on_delete=models.CASCADE)
 
     def __str__(self):
         return self.name
-
-
-class ListProducts(models.Model):
-    company = models.ForeignKey(
-        Company, related_name="company", on_delete=models.CASCADE
-    )
-    product = models.ForeignKey(
-        Product, related_name="product", on_delete=models.CASCADE
-    )
