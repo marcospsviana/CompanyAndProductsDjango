@@ -49,7 +49,7 @@ pip install -r requirements-dev.txt
 ```
 - criar o projeto django
 ```
-django-admin startproject comanymanager .
+django-admin startproject companymanager .
 ```
 
 - criar o app company
